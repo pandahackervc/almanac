@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almanac</title>
+
+    <!-- Gilroy font (self-hosted or via CDN alternative like Poppins if Gilroy not available) -->
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-main: #FAFAFA;  /* near white */
+            --bg-card: #FFFFFF;  /* pure white */
+            --bg-hover: #F5F5F5; /* light grayish white */
+            --text-main: #222222; /* dark text */
+            --text-sub: #555555; /* lighter text */
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Gilroy', sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+            font-size: 2.2rem;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 2rem;
+            color: var(--text-sub);
+            font-size: 1rem;
+        }
+
+        .links {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .link-card {
+            background-color: var(--bg-card);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-main);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: background-color 0.2s ease, transform 0.15s ease;
+        }
+
+        .link-card:hover {
+            background-color: var(--bg-hover);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Panda's Almanac</h1>
+    <p>Select an area to explore</p>
+
+    <div class="links">
+        <a class="link-card" href="cheatsheets/">Cheatsheets</a>
+        <a class="link-card" href="cores/">Cores</a>
+        <a class="link-card" href="projects/">Projects</a>
+    </div>
+</body>
+</html>
