@@ -16,55 +16,97 @@
   <!-- Header -->
   <header class="bg-gray-100 p-6 border-b mb-10">
     <div class="max-w-4xl mx-auto">
-      <h1 class="text-3xl font-semibold mb-1">Computer Science - Cores</h1>
-      <p class="text-gray-600">A concise overview or objective of these notes.</p>
+      <h1 class="text-3xl font-semibold mb-1">Computer Science</h1>
+      <p class="text-gray-600">Building up Computer Science from first principles.</p>
     </div>
   </header>
 
   <!-- Table of Contents -->
   <nav class="max-w-4xl mx-auto px-4 mb-10">
     <ul class="list-disc list-inside text-sm space-y-2 text-blue-600">
-      <li><a href="#introduction">1. Introduction</a></li>
-      <li><a href="#core-concepts">2. Core Concepts</a></li>
-      <li><a href="#examples">3. Examples</a></li>
-      <li><a href="#references">4. References</a></li>
+      <li><a href="#axioms">1. Axioms</a></li>
+      <li><a href="#levels">2. Levels of Abstraction</a></li>
+      <li><a href="#domains">3. Domains</a></li>
     </ul>
   </nav>
 
   <!-- Main Content -->
   <main class="max-w-4xl mx-auto px-4 space-y-12">
+    <hr class="my-10 border-gray-300" />
+    <section id="axioms">
+      <h2 class="text-2xl font-semibold mb-4">1. Axioms</h2>
+      <b>Representation</b> - <i class="text-gray-600">(How information is represented)</i>
+      <p class="mt-1 mb-4">All information is encoded as finite, discrete symbols (e.g., bits: 0s and 1s). It's about turning abstract ideas into structured formats. It's the <b><i> "What."</b></i></p>
+      <b>Transformation</b> - <i class="text-gray-600">(How information is transformed)</i>
+      <p class="mt-1 mb-4">All computation is transformation of representations by rules. This is the atomic unit of Computation. It's the <b><i> "How."</b></i></p>
+      <b>Control</b> - <i class="text-gray-600">(When, Which and Where the Transformation is happening)</i>
+      <p class="mt-1 mb-4">Computation is not just what transforms, but the order and conditions under which it happens. It determines the flow of execution.</p>
 
-    <section id="introduction">
-      <h2 class="text-2xl font-semibold mb-4">1. Introduction</h2>
-      <p>This section introduces the topic, explains why it matters, and outlines the goals of the notes.</p>
+
     </section>
-
-    <section id="core-concepts">
-      <h2 class="text-2xl font-semibold mb-4">2. Core Concepts</h2>
+    <hr class="my-10 border-gray-300" />
+    <section id="levels">
+      <h2 class="text-2xl font-semibold mb-4">2. Levels of Abstraction</h2>
+      <h3 class="text-xl font-semibold mb-2">Organize</h3>
       <ul class="list-disc list-inside space-y-2">
-        <li>Key idea 1</li>
-        <li>Key idea 2</li>
-        <li>Key idea 3</li>
+        <li><i class="text-blue-600">(R) Bits </i> &#8594; Booleans, Integers, Strings</li>
+        <li><i class="text-blue-600">(T) Operators (AND, OR, NOT) </i> &#8594; Functions</li>
+        <li><i class="text-blue-600">(C) Sequences & Cycles </i> &#8594; Loops, Recursion, Control Clauses</li>
+      </ul>
+       <h3 class="text-xl font-semibold mb-2 mt-4">Optimize</h3>
+      <ul class="list-disc list-inside space-y-2">
+        <li><i class="text-blue-600">(R) Data Structures (Arrays, Linked Lists, Trees, Graphs)</i> &#8594; Optimized for transformation</li>
+        <li><i class="text-blue-600">(T) Algorithms (Sorting, Searching)</i> &#8594; Optimized Transformations</li>
+        <li><i class="text-blue-600">(C) Protocols, Programs</i> &#8594; Optimized Flow</li>
+    </ul>
+       <h3 class="text-xl font-semibold mb-2 mt-4">Scale</h3>
+      <ul class="list-disc list-inside space-y-2">
+        <li><i class="text-blue-600">(R) Structure </i> &#8594; Databases, File Systems</li>
+        <li><i class="text-blue-600">(T) Computation</i> &#8594; Compilers, Interpreters</li>
+        <li><i class="text-blue-600">(C) Control</i> &#8594; Operating Systems, Networks</li>
       </ul>
     </section>
+    <hr class="border-gray-300" />
 
-    <section id="examples">
-      <h2 class="text-2xl font-semibold mb-4">3. Examples</h2>
-      <div class="bg-gray-50 border p-4 rounded text-sm font-mono whitespace-pre">
-        // Code snippet or example<br>
-        const result = doSomethingCool();
-      </div>
+    <section id="domains">
+      <h2 class="text-2xl font-semibold mb-4">3. Domains</h2>
+      <table class="min-w-full bg-white border rounded-xl border-gray-300 mb-10">
+        <thead>
+          <tr class="bg-gray-200">
+            <th class="px-4 py-2">Domain</th>
+            <th class="px-4 py-2">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border px-4 py-2">Programming Languages</td>
+            <td class="border px-4 py-2">Syntax (structure) + Semantics (transformation) + Execution Model (flow)</td>
+          </tr>
+          <tr>
+            <td class="border px-4 py-2">Operating Systems</td>
+            <td class="border px-4 py-2">Manage flow of computation across hardware, structure memory, transform system state
+</td>
+          </tr>
+          <tr>
+            <td class="border px-4 py-2">Networking</td>
+            <td class="border px-4 py-2">Transmit structured data, transform via protocols, control flow with routing.</td>
+          </tr>
+          <tr>
+            <td class="border px-4 py-2">Databases</td>
+            <td class="border px-4 py-2">Store structured information, transform via queries, control access and transactions</td>
+          </tr>
+          <tr>
+            <td class="border px-4 py-2">Cryptography</td>
+            <td class="border px-4 py-2">Transform information securely (computation), structure keys and messages (info), control access (flow)</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
-
-    <section id="references">
-      <h2 class="text-2xl font-semibold mb-4">4. References</h2>
-      <ul class="list-disc list-inside text-blue-600">
-        <li><a href="https://example.com" target="_blank">Resource 1</a></li>
-        <li><a href="https://example.com" target="_blank">Resource 2</a></li>
-      </ul>
-    </section>
-
   </main>
-
+<footer class="bg-gray-100 border-t py-4">
+  <div class="max-w-4xl mx-auto px-4">
+    <p class="text-sm text-gray-600">© 2025 Panda's Almanac. All rights reserved.</p>
+  </div>
+</footer>
 </body>
 </html>
